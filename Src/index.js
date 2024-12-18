@@ -1,21 +1,25 @@
 const getEleId = (id) => document.getElementById(id);
 const renderListProduct = (data) => {
   let content = "";
-
+  
   data.forEach((product) => {
-    const { imageUrl, name, desc, price } = product;
+    const {id,name,price,screen,backCamera,frontCamera,img,desc,type} = product
     content += `
       <div class="col-12 col-md-6 col-lg-4">
           <div class="card cardPhone">
-              <img src="./img/${imageUrl}" class="card-img-top" alt="..." />
+              <img src="./img/${img}" class="card-img-top" alt="..." />
               <div class="card-body">
               <div class="d-flex justify-content-between">
                   <div>
                   <h3 class="cardPhone__title">${name}</h3>
+                  <h3 class="cardPhone__title">Screen${screen}</h3>
+                  <h3 class="cardPhone__title">FrontCamera:${frontCamera}</h3>
+                  <h3 class="cardPhone__title">BackCamera${backCamera}</h3>
                   <p class="cardPhone__text">${desc}</p>
                   </div>
                   <div>
-                  <h3 class="cardPhone__title">$${price}</h3>
+                  <h3 class="cardPhone__title">$${price}</h3
+                  <h3 class="cardPhone__title">${type === "Iphone"? "Iphone":"Samsung"}</h3>
                   </div>
               </div>
               <div class="d-flex justify-content-between">
@@ -40,7 +44,9 @@ const renderListProduct = (data) => {
   });
 
   // show products to UI
-  getEleId("mainProduct").innerHTML = content;
+  getEleId("main-product").innerHTML = content;
+  console.log(content);
+  
 };
 
 const fetchListProduct = () => {
@@ -51,7 +57,8 @@ const fetchListProduct = () => {
 
   promise
     .then((result) => {
-      console.log(result);
+      renderListProduct(result.data)
+      console.log(result.data);
     })
     .catch((error) => {
       console.log(error);
