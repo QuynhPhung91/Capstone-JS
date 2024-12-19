@@ -6,8 +6,7 @@
 
 html,
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif
-  font-size: 10;
+  font-family: Georgia, "Times New Roman", Times, serif font-size 10px;
   font-weight: 400;
   color: #656774;
   background-color: #fdd4ce;
@@ -18,7 +17,6 @@ h3 {
   color: #1d365e;
   letter-spacing: 0.015rem;
   margin-bottom: 30px;
-
 }
 h6 {
   font-size: 1rem;
