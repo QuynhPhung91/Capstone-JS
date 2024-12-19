@@ -6,12 +6,26 @@
 
 html,
 body {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', Times, serif
+  font-size: 10;
   font-weight: 400;
-
   color: #656774;
   background-color: #fdd4ce;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1d365e;
+  letter-spacing: 0.015rem;
+  margin-bottom: 30px;
+
+}
+h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1d365e;
+  letter-spacing: 0.01rem;
+  margin-bottom: 10px;
 }
 
 .section {
@@ -19,12 +33,12 @@ body {
 }
 
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 80px;
   text-align: center;
   font-size: 2.25rem;
   font-weight: 700;
   color: #1d365e;
-  letter-spacing: 0.015rem;
+  letter-spacing: 0.02rem;
 }
 
 .btnPhone-white {
@@ -84,7 +98,7 @@ body {
   background-color: #f5f9fe;
   border: none;
   padding: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .cardPhone img {
