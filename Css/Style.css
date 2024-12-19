@@ -419,3 +419,16 @@ body.darkMode {
   display: block;
 }
 /*# sourceMappingURL=main.css.map */
+#cart-footer {
+  display: flex !important;
+  justify-content: flex-end !important; /* Đẩy footer sang phải */
+  align-items: center;
+  width: 100%; /* Chiếm toàn bộ chiều rộng modal */
+  gap: 10px; /* Khoảng cách giữa các nút */
+}
+.modal-backdrop {
+  position: relative;
+}
+.modal-backdrop .show{
+  opacity: 0;
+}

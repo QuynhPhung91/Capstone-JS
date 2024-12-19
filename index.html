@@ -124,37 +124,18 @@
                     <div id="cart-items">
                       <!-- Header -->
                       <div class="cart-header d-flex align-items-center fw-bold mb-3">
-                        <div class="col-2">ID</div>
+                        <div class="col-2">STT</div>
                         <div class="col-3">Tên sản phẩm</div>
                         <div class="col-2">Hình ảnh</div>
                         <div class="col-2">Số lượng</div>
                         <div class="col-2">Giá tiền</div>
                         <div class="col-1">Xóa</div>
                       </div>
-                      
-                      <!-- Sản phẩm mẫu -->
-                      <div class="cart-item d-flex align-items-center mb-3">
-                        <div class="col-2">1</div>
-                        <div class="col-3">Product Name</div>
-                        <div class="col-2">
-                          <img src="https://via.placeholder.com/50" alt="Product Image" class="img-thumbnail">
-                        </div>
-                        <div class="col-2">
-                          <button class="btn btn-sm btn-secondary">-</button>
-                          <span class="mx-2">1</span>
-                          <button class="btn btn-sm btn-secondary">+</button>
-                        </div>
-                        <div class="col-2">$10</div>
-                        <div class="col-1">
-                          <button class="btn btn-sm btn-danger">Xóa</button>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="modal-footer">
+                      <div id="cart-product-list"></div>
+                    <div id="cart-footer" class="modal-footer">
                       <h5>Total: $<span id="cart-total">0</span></h5>
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Proceed to Checkout</button>
+                      <button type="button" class="btn btn-primary" id="checkout-btn">Proceed to Checkout</button>
                     </div>
                 </div>
               </div>
