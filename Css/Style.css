@@ -6,25 +6,64 @@
 
 html,
 body {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif font-size 10px;
   font-weight: 400;
-
   color: #656774;
   background-color: #fdd4ce;
 }
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1d365e;
+  letter-spacing: 0.02rem;
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1d365e;
+  letter-spacing: 0.015rem;
+  margin-bottom: 30px;
+}
+h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1d365e;
+  letter-spacing: 0.01rem;
+  margin-bottom: 10px;
+}
+table-bordered {
+  font: 1em sans-serif;
+  color: #000;
+  border-radius: 0.25;
+}
+table {
+  color: #f9d412;
+  border-collapse: collapse;
+}
 
-.section {
+thead {
+  background-color: #f9d412;
+  text-align: center;
+}
+tr {
+  color: #1d365e;
+  border: black;
+  text-align: center;
+}
+
+p .section {
   padding: 100px 0;
 }
 
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 80px;
   text-align: center;
   font-size: 2.25rem;
   font-weight: 700;
   color: #1d365e;
-  letter-spacing: 0.015rem;
+  letter-spacing: 0.02rem;
 }
 
 .btnPhone-white {
@@ -84,7 +123,7 @@ body {
   background-color: #f5f9fe;
   border: none;
   padding: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .cardPhone img {
@@ -99,9 +138,10 @@ body {
 }
 
 .cardPhone .cardPhone__text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 14px;
-  font-weight: 400;
-  color: #1d365e;
+  font-weight: 700;
+  color: brown;
 }
 
 .cardPhone .cardPhone__rating {
@@ -419,16 +459,3 @@ body.darkMode {
   display: block;
 }
 /*# sourceMappingURL=main.css.map */
-#cart-footer {
-  display: flex !important;
-  justify-content: flex-end !important; /* Đẩy footer sang phải */
-  align-items: center;
-  width: 100%; /* Chiếm toàn bộ chiều rộng modal */
-  gap: 10px; /* Khoảng cách giữa các nút */
-}
-.modal-backdrop {
-  position: relative;
-}
-.modal-backdrop .show{
-  opacity: 0;
-}
