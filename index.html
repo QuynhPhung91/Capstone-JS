@@ -101,45 +101,30 @@
               <a class="nav-link" href="#">Shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"  data-bs-toggle="modal" data-bs-target="#cartModal">
-                <i class="fas fa-shopping-cart"></i>
-                <span id="cart-count" class="badge badge-pill badge-primary">0</span>
-              </a>
+              <a class="nav-link" href="./admin/index.html">Seller Center</a>
             </li>
-            <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="cartModalLabel">Your Shopping Cart</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Giỏ hàng -->
-                    <div id="cart-items">
-                      <!-- Header -->
-                      <div class="cart-header d-flex align-items-center fw-bold mb-3">
-                        <div class="col-2">STT</div>
-                        <div class="col-3">Tên sản phẩm</div>
-                        <div class="col-2">Hình ảnh</div>
-                        <div class="col-2">Số lượng</div>
-                        <div class="col-2">Giá tiền</div>
-                        <div class="col-1">Xóa</div>
-                      </div>
-                      <div id="cart-product-list"></div>
-                    <div id="cart-footer" class="modal-footer">
-                      <h5>Total: $<span id="cart-total">0</span></h5>
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary" id="checkout-btn">Proceed to Checkout</button>
-                    </div>
-                </div>
+            <li class="nav-item">
+              <br />
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                </ul>
               </div>
-            </div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -164,8 +149,8 @@
                 <p
                   class="animate__animated animate__fadeInUp animate__delay-1s"
                 >
-                  Cras tortor mi, lobortis quis ornare in, varius scelerisque
-                  urna. Vivamus imperdiet dolor nec odio convallis consequat.
+                  Cell phone Top Deals, Check out the latest deals on cell
+                  phones.
                 </p>
               </div>
 
@@ -204,10 +189,259 @@
     <!-- Section Featured Products -->
 
     <section class="products container section">
-      <h2 class="section-title">-Featured Products-</h2>
+      <h2 class="section-title">Featured Products</h2>
       <div class="products__content">
-        <div id="loader" style="display:none" class="loader"></div>
-        <div id="main-product" class="row"></div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card cardPhone">
+              <img
+                src="./img/iphone-x-64gb.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h3 class="cardPhone__title">Iphone X</h3>
+                    <h6 class="cardPhone__screen">
+                      screen 68
+                    </h6>
+                    <h6 class="cardPhone__backCamera">
+                      backCamera: 2 camera 12 MP
+                    </h6>
+                    <br />
+                    <h6 class="cardPhone__frontCamera">
+                      frontCamera: 7 MP
+                    </h6>
+                    <p class="cardPhone__text">
+                      Thiết kế mang tính đột phá
+                    </p>
+                  </div>
+                  <div>
+                    <h3 class="cardPhone__title">$1000</h3>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="cardPhone__rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <div>
+                    <button class="btnPhone-shadow">
+                      <i class="fa fa-shopping-cart"></i> Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card cardPhone">
+              <img
+                src="./img/samsung-galaxy-m51.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h3 class="cardPhone__title">Samsung Galaxy M51</h3>
+                    <h6 class="cardPhone__screen">
+                      screen 69
+                    </h6>
+                    <h6 class="cardPhone__backCamera">
+                      backCamera: Chính 64 MP & Phụ 12 MP, 5 MP, 5 MP
+                    </h6>
+                    <h6 class="cardPhone__frontCamera">
+                      frontCamera: 32 MP
+                    </h6>
+                    <p class="cardPhone__text">
+                      Thiết kế đột phá, màn hình tuyệt đỉnh
+                    </p>
+                  </div>
+                  <div>
+                    <h3 class="cardPhone__title">$3500</h3>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="cardPhone__rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <div>
+                    <button class="btnPhone-shadow">
+                      <i class="fa fa-shopping-cart"></i> Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card cardPhone">
+              <img
+                src="./img/samsung-galaxy-m22-1-600x600.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h3 class="cardPhone__title">Samsung Galaxy M22</h3>
+                    <h6 class="cardPhone__screen">
+                      screen 70
+                    </h6>
+                    <h6 class="cardPhone__backCamera">
+                      backCamera: Chính 12 MP & Phụ 64 MP, 12 MP
+                    </h6>
+                    <h6 class="cardPhone__frontCamera">
+                      frontCamera: 32 MP
+                    </h6>
+                    <p class="cardPhone__text">Thiết kế mang tính đột phá</p>
+                  </div>
+                  <div>
+                    <h3 class="cardPhone__title">$4500</h3>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="cardPhone__rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <div>
+                    <button class="btnPhone-shadow">
+                      <i class="fa fa-shopping-cart"></i> Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card cardPhone">
+              <img src="./img/iphone 11.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h3 class="cardPhone__title">Iphone 11</h3>
+                    <h6 class="cardPhone__screen">
+                      screen 54
+                    </h6>
+                    <h6 class="cardPhone__backCamera">
+                      backCamera: Chính 12 MP & Phụ 64 MP
+                    </h6>
+                    <h6 class="cardPhone__frontCamera">
+                      frontCamera: 32 MP
+                    </h6>
+                    <p class="cardPhone__text">
+                      Thiết kế đột phá, màn hình tuyệt đỉnh
+                    </p>
+                  </div>
+                  <div>
+                    <h3 class="cardPhone__title">$1000</h3>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="cardPhone__rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <div>
+                    <button class="btnPhone-shadow">
+                      <i class="fa fa-shopping-cart"></i> Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card cardPhone">
+              <img
+                src="./img/Apple-Apple-Watch-Series-3_2.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h3 class="cardPhone__title">Apple watch</h3>
+                    <h6>Công nghệ: Màn hình OLED</h6>
+                    <h6>Tiện ích: Nghe gọi</h6>
+                    <h6>
+                      Theo dõi sức khỏe: Tính quãng đường chạy, theo dõi nhịp
+                      tim 24h
+                    </h6>
+                    <p class="cardPhone__text">Tính năng nổi bật</p>
+                  </div>
+                  <div>
+                    <h3 class="cardPhone__title">$330</h3>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="cardPhone__rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <div>
+                    <button class="btnPhone-shadow">
+                      <i class="fa fa-shopping-cart"></i> Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card cardPhone">
+              <img src="./img/product6.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h3 class="cardPhone__title">Apple AirPods 2</h3>
+                    <h6>Công nghệ: Chip Apple H1</h6>
+                    <h6>Tiện ích: Có mic thoại & Sạc nhanh</h6>
+                    <h6>Phím điều khiển: Phát/dừng chơi nhạc, Mic thoại</h6>
+                    <p class="cardPhone__text">Tính năng nổi bật</p>
+                  </div>
+                  <div>
+                    <h3 class="cardPhone__title">$99.99</h3>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="cardPhone__rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <div>
+                    <button class="btnPhone-shadow">
+                      <i class="fa fa-shopping-cart"></i> Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Footer -->
