@@ -11,6 +11,14 @@ body {
   color: #656774;
   background-color: #fdd4ce;
 }
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1d365e;
+  letter-spacing: 0.02rem;
+  margin-bottom: 30px;
+}
 h3 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -24,6 +32,25 @@ h6 {
   color: #1d365e;
   letter-spacing: 0.01rem;
   margin-bottom: 10px;
+}
+table-bordered {
+  font: 1em sans-serif;
+  color: #000;
+  border-radius: 0.25;
+}
+table {
+  color: #f9d412;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f9d412;
+  text-align: center;
+}
+tr {
+  color: #1d365e;
+  border: black;
+  text-align: center;
 }
 
 p .section {
@@ -111,7 +138,7 @@ p .section {
 }
 
 .cardPhone .cardPhone__text {
-  font-family: Georgia, 'Times New Roman', Times, serif
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 14px;
   font-weight: 350;
   color: brown;
